@@ -273,7 +273,13 @@ body {
         height: 120vw;
         object-fit: cover;
         object-position: 32% 100%;
-        border-radius: 50px;
+        border-radius: 20px;
+        transition: all 0.3s ease-out;
+    }
+
+    .special-memories .card .card__container .card-img:hover {
+        transform: translateY(-20px);
+        opacity: 0.3;
     }
 
     .special-memories .card .card__container p {
