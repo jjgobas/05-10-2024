@@ -268,22 +268,50 @@ body {
         gap: 0.5em;
     }
 
+    .special-memories .card .card__component {
+        width: 85vw;
+        height: 120vw;
+        position: relative;
+        transition: transform 1200ms;
+        transform-style: preserve-3d;
+    }
+
+    .special-memories .card .card__component:hover {
+        transform: rotateY(180deg);
+    }
+
+    .card__component--front, .card__component--back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+    }
+
+    .special-memories .card .card__component--back {
+        background-image: url(../images/);
+        border-radius: 20px;
+        color: white;
+        font-size: clamp(1rem, 6vw, 10rem);
+        display: flex;
+        align-items: center;
+        padding: 0 2em;
+        text-align: center;
+        transform: rotateY(180deg);
+    }
+
+
     .special-memories .card .card__container .card-img {
         width: 100%;
-        height: 120vw;
+        height: 100%;
         object-fit: cover;
         object-position: 32% 100%;
         border-radius: 20px;
         transition: all 0.3s ease-out;
     }
 
-    .special-memories .card .card__container .card-img:hover {
-        transform: translateY(-20px);
-        opacity: 0.3;
-    }
-
     .special-memories .card .card__container p {
         font-size: clamp(1rem, 6.7vw, 10rem);
+        position: static;
     }
 
     /* SPECIAL MEMORIES - TEXT FOOTER */
@@ -397,3 +425,17 @@ body {
         transform: translateX(-100%);
     }
 }
+
+/*
+    REFERENCES
+    Card Hover: https://www.youtube.com/watch?v=NCLdf661ILE
+
+
+
+
+
+
+
+
+
+*/

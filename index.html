@@ -50,7 +50,9 @@
             </div>
         </div>
         <div class="about__video">
-            <video src="about-video.mp4"></video>
+            <video preload="true" autoplay = "autoplay" loop = "loop" volume= "0" muted>
+                <source src="about-video.mp4">
+            </video>
         </div>
     </section>
 
@@ -92,11 +94,18 @@
             <div class="wrapper">
                 <div class="card__container card-1">
                     <div class="wrapper">
-                        <img src="images/image-1.JPG" alt="" class="card-img">
+                        <div class="card__component">
+                            <div class="card__component--front">
+                                <img src="images/image-1.JPG" alt="" class="card-img">
+                            </div>
+                            <div class="card__component--back">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod deleniti fugiat natus reprehenderit dicta qui! Molestias obcaecati cumque quisquam eius!
+                            </div>
+                        </div>
                         <p>April 10, 2024</p>
                     </div>
                 </div>
-                <div class="card__container card-2">
+                <!-- <div class="card__container card-2">
                     <div class="wrapper">
                         <img src="images/image-2.JPG" alt="" class="card-img">
                         <p>January 5, 2024</p>
@@ -113,7 +122,7 @@
                         <img src="images/image-4.png" alt="" class="card-img">
                         <p>November 3, 2023</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="text__footer">
