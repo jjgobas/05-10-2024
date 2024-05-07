@@ -11,7 +11,7 @@ ms.add("(min-width: 320px", () => {
         scrollTrigger: {
             trigger: ".text__block--botton-right",
             start: "top center",
-            markers: true,
+            // markers: true,
             scrub: true
         },
         y: -200,
