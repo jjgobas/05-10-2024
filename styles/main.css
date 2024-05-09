@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
+/* START */
 * {
     margin: 0;
     padding: 0;
@@ -432,6 +433,32 @@ body {
         color: var(--dune);
         font-weight: 900;
         font-size: clamp(1rem, 10vw, 10rem);
+    }
+
+    /* ! DELETE THIS AFTER DOING THE CSS FOR DESKTOP */
+    .UNDER-DEVELOPMENT {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    body section{
+        display: none;
+    }
+
+    .UNDER-DEVELOPMENT {
+        display: block;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .UNDER-DEVELOPMENT .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10vw;
+        text-align: center;
+        height: 100%;
     }
 }
 
