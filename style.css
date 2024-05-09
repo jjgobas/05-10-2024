@@ -133,13 +133,13 @@ body {
     .about .text__heading {
         color: var(--darker-grey);
         font-weight: 900;
-        font-size: clamp(2rem, 10vw, 15rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(1.8rem, 5vw, 5rem); /* *CHANGE MAX VALUE*/
         text-transform: uppercase;
     }
 
     .about .text p {
         color: var(--gray);
-        font-size: clamp(1rem, 6.5vw, 10rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(1rem, 6.2vw, 10rem); /* *CHANGE MAX VALUE*/
         margin: 0 1rem;
     }
 
@@ -177,7 +177,7 @@ body {
 
     .feature .text p {
         color: var(--gray);
-        font-size: clamp(1rem, 6.5vw, 10rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(1rem, 6.2vw, 10rem); /* *CHANGE MAX VALUE*/
         margin: 0 1rem;
     }
 
@@ -338,7 +338,7 @@ body {
     .special-memories .text__footer {
         display: flex;
         justify-content: center;
-        font-size: clamp(1rem, 11vw, 8rem);
+        font-size: clamp(1rem, 10vw, 8rem);
     }
 
     /* CLOSURE */
@@ -350,7 +350,7 @@ body {
     /* CLOSURE - TEXT */
     .closure .text {
         color: var(--gray);
-        font-size: clamp(1rem, 6.5vw, 10rem);
+        font-size: clamp(1rem, 6vw, 10rem);
         margin: 2em 0;
     }
 
@@ -433,7 +433,7 @@ body {
     .footer .tag .tag__text {
         color: var(--dune);
         font-weight: 900;
-        font-size: clamp(1rem, 10vw, 10rem);
+        font-size: clamp(1rem, 9.5vw, 10rem);
     }
 
     /* ! DELETE THIS AFTER DOING THE CSS FOR DESKTOP */
