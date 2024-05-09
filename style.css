@@ -303,20 +303,20 @@ body {
     }
 
     .card__component .back-card-1 {
-        background: url(images/back-image-1.JPG);
+        background: url(back-images/back-image-1.JPG);
     }
 
     .card__component .back-card-2 {
-        background: url(images/back-image-2.png);
+        background: url(back-images/back-image-2.png);
         background-position: center;
     }
 
     .card__component .back-card-3 {
-        background: url(images/back-image-3.JPG);
+        background: url(back-images/back-image-3.JPG);
     }
 
     .card__component .back-card-4 {
-        background: url(images/back-image-4.png);
+        background: url(back-images/back-image-4.png);
     }
 
     .special-memories .card .card__container .card-img {
