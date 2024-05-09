@@ -133,7 +133,7 @@ body {
     .about .text__heading {
         color: var(--darker-grey);
         font-weight: 900;
-        font-size: clamp(1.8rem, 5vw, 5rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(2rem, 9vw, 5rem); /* *CHANGE MAX VALUE*/
         text-transform: uppercase;
     }
 
