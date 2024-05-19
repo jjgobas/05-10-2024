@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Unbounded:wght@200..900&display=swap');
 
+/* TODO */
+/*
+    - Focus on the responsive for 1024 width screen
+*/
 /* START */
 * {
     margin: 0;
@@ -68,7 +72,7 @@ body {
     }
 
     header .header__text {
-        font-size: clamp(1rem, 5vw, 3rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(1rem, 5vw, 2rem); /* *CHANGE MAX VALUE*/
         font-family: 'Unbounded';
         font-weight:bolder;
         color: #fff;
@@ -90,7 +94,7 @@ body {
 
     .hero .hero__title {
         color: white;
-        font-size: clamp(2rem, 15vw, 10rem);
+        font-size: clamp(2rem, 15vw, 7rem);
         font-weight: bold;
         font-family: 'Unbounded';
         text-transform: uppercase;
@@ -101,13 +105,17 @@ body {
     }
 
     .hero .hero__title span {
-        color: var(--red);
         font-weight: bold;
         font-family: 'Unbounded';
         display: block; /* * REMOVE THIS FOR RESPONSIVE */
     }
 
+    .hero .hero__title .red-text {
+        color: var(--red);
+    }
+
     .hero p {
+        font-size: clamp(1rem, 5vw, 2rem);
         display: inline;
         color: white;
         letter-spacing: 0.55em;
@@ -123,6 +131,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
         row-gap: 1em;
         margin: 2.5em 0;
@@ -132,13 +141,14 @@ body {
     .about .text__heading {
         color: var(--darker-grey);
         font-weight: 900;
-        font-size: clamp(2rem, 9vw, 5rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(2rem, 9vw, 4rem); /* *CHANGE MAX VALUE*/
         text-transform: uppercase;
+        max-width: 700px;
     }
 
     .about .text p {
         color: var(--gray);
-        font-size: clamp(1rem, 6.2vw, 10rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(1rem, 6.2vw, 2.6rem); /* *CHANGE MAX VALUE*/
         margin: 0 1rem;
     }
 
@@ -169,14 +179,14 @@ body {
         color: var(--darker-grey);
         font-family: 'Unbounded';
         font-weight: 900;
-        font-size: clamp(2rem, 11.2vw, 15rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(2rem, 11.2vw, 5rem); /* *CHANGE MAX VALUE*/
         text-transform: uppercase;
         line-height: 0.8;
     }
 
     .feature .text p {
         color: var(--gray);
-        font-size: clamp(1rem, 6.2vw, 10rem); /* *CHANGE MAX VALUE*/
+        font-size: clamp(1rem, 6.2vw, 2rem); /* *CHANGE MAX VALUE*/
         margin: 0 1rem;
     }
 
@@ -250,7 +260,7 @@ body {
         font-family: 'Unbounded';
         text-transform: uppercase;
         font-weight: 500;
-        font-size: clamp(1rem, 13vw, 10rem);
+        font-size: clamp(1rem, 13vw, 6rem);
     }
 
     /* SPECIAL MEMORIES - CARD */
@@ -271,6 +281,7 @@ body {
 
     .special-memories .card .card__component {
         width: 85vw;
+        max-width: 700px;
         height: 120vw;
         position: relative;
         transition: transform 1200ms;
@@ -329,7 +340,7 @@ body {
     }
 
     .special-memories .card .card__container p {
-        font-size: clamp(1rem, 6.7vw, 10rem);
+        font-size: clamp(1rem, 6.7vw, 3rem);
         position: static;
     }
 
@@ -349,7 +360,7 @@ body {
     /* CLOSURE - TEXT */
     .closure .text {
         color: var(--gray);
-        font-size: clamp(1rem, 6vw, 10rem);
+        font-size: clamp(1rem, 6vw, 4rem);
         margin: 2em 0;
     }
 
@@ -373,7 +384,7 @@ body {
     .closure .polaroid img {
         overflow: visible;
         width: 70%;
-        padding: 0.8em 0.8em 3em 0.8em;
+        padding: 1em 1em 3em 1em;
         box-shadow: 0px 5px 1rem rgba(0, 0, 0, 0.3);
         background-color: var(--polaroid-white);
         z-index: 2;
@@ -400,7 +411,7 @@ body {
         color: var(--anti-flash-white);
         font-weight: 900;
         text-align: center;
-        font-size: clamp(1rem, 7vw, 10rem);
+        font-size: clamp(1rem, 7vw, 3rem);
         padding: 2rem 0 1rem 0;
     }
 
@@ -418,7 +429,7 @@ body {
         padding-left: 0.3em;
         color: var(--dune);
         font-weight: 900;
-        font-size: clamp(1rem, 26vw, 10rem);
+        font-size: clamp(1rem, 26vw, 8rem);
         animation: marquee-animation 10s linear infinite;
     }
 
@@ -432,35 +443,57 @@ body {
     .footer .tag .tag__text {
         color: var(--dune);
         font-weight: 900;
-        font-size: clamp(1rem, 9.5vw, 10rem);
+        font-size: clamp(1rem, 9.5vw, 3.5rem);
     }
+}
 
-    /* ! DELETE THIS AFTER DOING THE CSS FOR DESKTOP */
-    .UNDER-DEVELOPMENT {
-        display: none;
+@media (min-width: 450px) {
+    /* CLOSURE - POLAROID */
+    .closure .polaroid img {
+        padding: 1.5em 1.5em 4em 1.5em;
     }
 }
 
 @media (min-width: 768px) {
-    body section{
-        display: none;
+    /* PARALLAX - HEADER */
+    header .header__icon img {
+        width: 6vw;
     }
 
-    .UNDER-DEVELOPMENT {
-        display: block;
-        height: 100vh;
-        width: 100%;
+    /* CLOSURE - POLAROID */
+    .closure .polaroid img {
+        overflow: visible;
+        width: 70%;
+        padding: 2em 2em 8em 2em;
     }
 
-    .UNDER-DEVELOPMENT .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 10vw;
-        text-align: center;
-        height: 100%;
+    /* FOOTER - QUOTE */
+    .footer .quote .wrapper {
+        padding: 2rem 1.5em 1rem 1.5em;
     }
 }
+
+@media (min-width: 1024px) {
+    /* PARALLAX - HERO */
+    .hero .hero__title {
+        margin-bottom: 0.5rem;
+        font-size: clamp(2rem, 8vw, 7rem);
+        width: 12em;
+    }
+
+    .hero .hero__title .red-text {
+        display: inline;
+    }
+
+    .hero .hero__title .top-text {
+        display: block;
+    }
+
+    .hero p {
+        font-size: clamp(1rem, 5vw, 2rem);
+    }
+}
+
 
 /* ANIMATIONS */
 @keyframes marquee-animation {
